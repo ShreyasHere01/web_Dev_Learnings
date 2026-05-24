@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" contents="width=device-width">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>To do App</h1>
+    <div>
+        <div id="todo-1" style="display: flex;">
+    <h4>1. gym </h4>
+    <button onclick="deletetodo(1)">delete</button>
+        </div>
+        <div id="todo-2" style="display: flex;">
+    <h4>2. food</h4>
+    <button onclick="deletetodo(2)">delete</button>
+        </div>
+    </div>
+    <input type="text" placeholder="add "></input>
+    <button>add to do</button>
+    <script>
+        
+        function deletetodo(x){
+           let ele= document.getElementById("todo-"+x);
+           ele.parentNode.removeChild(ele);
+          
+         
+          
+
+        }
+        
+    </script>
+</body>
+</html>
